@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Auth from './pages/Auth';
 import Dashboard from './pages/Dashboard';
+import CelebrationWall from './pages/CelebrationWall'; // NEW
 import Navbar from './components/Navbar';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Auth />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/celebration-wall" element={<CelebrationWall />} /> {/* NEW */}
           </Routes>
         </div>
       </div>
